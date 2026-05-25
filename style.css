@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: #F7F4F0;
+    font-family: 'Cormorant Garamond', serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 80px;
+}
+nav .Title h1{
+    font-weight:500;
+    color: black;
+}
+nav .container2 .navbar-buttons{
+    display: flex;
+    gap:40px;
+    padding: 10px;
+}
+nav .container2 .navbar-buttons p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    color:#7b8462;
+}
+nav .container3 .navbar-icons{
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+}
+nav .container3 .navbar-icons i{
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+
+
+}
+
+
+/*main content*/
+.Main-content{
+    padding: 50px 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.Main-content .left-content{
+    width: 32%;
+    height: 100%;
+    padding-right: 40px;
+}
+.Main-content .left-content div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Main-content .left-content div i{
+    font-size: 30px;
+    color: green;
+}
+
+.Main-content .left-content div p{
+    font-size: 18px;
+    color: grey;
+    font-weight: 500;
+}
+
+.Main-content .left-content h1{
+    font-size: 110px;
+    font-weight: 400;
+    line-height: 0.9;
+    margin: 30px 0px;
+    letter-spacing: -3px;
+}
+.Main-content .left-content p{
+    color: grey;
+    max-width: 350px;
+    line-height: 1.5;
+
+}
+.Main-content .left-content .colors p{
+    font-weight: 500;
+    color: black;
+    margin-top: 20px;
+}
+.Main-content .left-content .colors span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: grey;
+    position: relative;
+    top: 12px;
+    margin-right: 20px;
+}
+.Main-content .left-content .colors :nth-child(3){
+    background-color: black;
+}
+.Main-content .left-content .colors :nth-child(4){
+    background-color: rgb(186, 130, 179);
+}
+.Main-content .left-content .details{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-right: 100px;
+}
+.Main-content .left-content .description{
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+.Main-content .left-content .qualities div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+    border-right: 1px solid rgb(213, 213, 213);
+    padding-right: 20px;
+}
+.Main-content .left-content .qualities div:last-child{
+    border-right: none;
+    padding-right: 0px;
+}
+
+.Main-content .right-content{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    padding-left: 30px;
+}
+.Main-content .right-content .items-name{
+    font-size: 24px;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: -90px;
+    z-index: 1;
+    color:#555;
+}
+.Main-content .right-content .features{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 25px;
+    width: 78%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 10px;
+    background:#f9f6f2;
+    margin-left: 30px;
+
+}
+.Main-content .right-content .features div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 50px;
+    border-right: 1px solid rgb(213, 213, 213);
+   
+}
+.Main-content .right-content .features div:last-child{
+    border-right: none;
+}
+
+.Main-content .right-content .features div i{
+    font-size: 30px;
+    color: green;
+}
+.Main-content .right-content .image{
+    position:relative;
+    width: 72%;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    
+}
+.Main-content .right-content .image .overlay{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.Main-content .right-content .image .overlay2{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.Main-content .right-content .image .overlay2 i{
+    color: green;
+    font-size: 13px;
+    position:relative;
+    top: -1px;
+}
+
+.Main-content .right-content .image .overlay3{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    bottom: 20px;
+    right: -20px;
+    padding: 10px 20px;
+    background-color: #7b8462;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.Main-content .right-content .image .overlay3 i{
+    font-size: 25px;
+}
+
+.Main-content .right-content .image img{
+    padding-top: 5px;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 5%;
+}
+.Main-content .right-content .card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    top: 100px;
+    right: 20px;
+    width: 12%;
+}
+
+
+.Main-content .right-content .card .boxes img{
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 15px;
+}
+.Main-content .right-content .card .boxes img:hover{
+    transform: scale(1.1);
+    border: 2px solid #000;
+    transition: 0.3s ease-in-out;
+}   
